@@ -120,6 +120,9 @@ nav a:hover {
 /* about */
 .about {
   padding: 40px 0 96px;
+}
+
+.about .wrap {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
   gap: 48px;
@@ -229,9 +232,14 @@ th {
 /* profile */
 .profile {
   padding: 48px 0 96px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px 48px;
+}
+
+.profile .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
 }
 
 .profile dl {
@@ -266,10 +274,7 @@ footer .wrap {
 }
 
 @media (max-width: 720px) {
-  .about {
-    grid-template-columns: 1fr;
-  }
-  .profile {
+  .about .wrap {
     grid-template-columns: 1fr;
   }
 }
