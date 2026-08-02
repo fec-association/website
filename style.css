@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap");
 
 :root {
+  --font-sans: "Noto Sans JP", sans-serif;
   --primary: #16323f;
   --primary-soft: #23495a;
   --accent: #e0812c;
@@ -33,13 +34,13 @@ body {
   margin: 0;
   background: var(--surface);
   color: var(--text);
-  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-family: var(--font-sans);
   line-height: 1.75;
   font-size: 16px;
 }
 
 h1, h2, h3 {
-  font-family: "Shippori Mincho", serif;
+  font-family: var(--font-sans);
   color: var(--primary);
   margin: 0;
 }
@@ -116,7 +117,7 @@ header .wrap {
 }
 
 .logo {
-  font-family: "Shippori Mincho", serif;
+  font-family: var(--font-sans);
   font-weight: 800;
   font-size: 1.15rem;
   letter-spacing: 0.02em;
@@ -285,7 +286,7 @@ section[id] {
 
 .purpose li::before {
   content: counter(item, decimal-leading-zero);
-  font-family: "Shippori Mincho", serif;
+  font-family: var(--font-sans);
   font-weight: 700;
   color: var(--accent-text);
   font-size: 1.05rem;
@@ -375,7 +376,7 @@ footer {
 }
 
 .footer-logo {
-  font-family: "Shippori Mincho", serif;
+  font-family: var(--font-sans);
   font-weight: 800;
   font-size: 1.05rem;
   color: #f2efe6;
