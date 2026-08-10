@@ -61,6 +61,19 @@ a {
   padding: 0 24px;
 }
 
+.prose {
+  color: var(--text-soft);
+  max-width: 60ch;
+}
+
+.prose p {
+  margin: 0;
+}
+
+.prose p + p {
+  margin-top: 1em;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -239,19 +252,6 @@ section[id] {
   margin-bottom: 0;
 }
 
-.about .body {
-  color: var(--text-soft);
-  max-width: 60ch;
-}
-
-.about .body p {
-  margin: 0;
-}
-
-.about .body p + p {
-  margin-top: 1em;
-}
-
 /* purpose list */
 .purpose {
   padding: 72px 0;
@@ -354,6 +354,25 @@ th {
 .profile dd a {
   color: var(--primary-soft);
   text-underline-offset: 3px;
+}
+
+/* policy */
+.policy {
+  padding: 64px 0 96px;
+}
+
+.policy h1 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.policy h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 16px;
 }
 
 /* footer */
