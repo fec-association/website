@@ -298,8 +298,8 @@ section[id] {
   color: var(--text-soft);
 }
 
-/* board */
-.board {
+/* members */
+.members {
   padding: 88px 0 64px;
 }
 
