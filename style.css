@@ -368,6 +368,11 @@ th {
   border-bottom: 1px solid var(--border);
 }
 
+/* 長い項目名が折り返されないよう、ラベル列を広げる */
+.policy .row {
+  grid-template-columns: 12em 1fr;
+}
+
 .policy h2 {
   font-size: 1.2rem;
   font-weight: 700;
